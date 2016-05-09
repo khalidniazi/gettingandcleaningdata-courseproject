@@ -75,7 +75,7 @@ FeatureNames <- colnames(MergedData);
 ## 4. Appropriately label the data set with descriptive activity names. 
 
 # Rephrasing Variable names to make them more readable
-FeatureNames <- gsub('[-()]','', ColNames);
+FeatureNames <- gsub('[-()]','', FeatureNames);
 FeatureNames <- gsub('std$','StdDeviation',FeatureNames);
 FeatureNames <- gsub('mean','Mean',FeatureNames);
 FeatureNames <- gsub('JerkMag','JerkMagnitude',FeatureNames);
